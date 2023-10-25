@@ -13,6 +13,17 @@ import {
     DialogTitle
 } from '@/components/ui/dialog'
 
+import {
+    Form,
+    FormControl,
+    FormItem,
+    FormMessage,
+    FormLabel,
+    FormField
+} from '@/components/ui/form'
+import { Input } from '../ui/input';
+import { Button } from '../ui/button';
+
 const formSchema = z.object({
     name: z.string().min(1, {
         message: 'Server name is required.'
@@ -33,6 +44,9 @@ export const InitialModal = () => {
     
     const isLoading = form.formState.isSubmitting;
 
+    const onSubmit = async (values: z.infer<typeof formSchema>) => {
+        console.log(values);
+    }
 
     return (
     
