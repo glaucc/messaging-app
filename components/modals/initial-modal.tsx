@@ -60,6 +60,31 @@ export const InitialModal = () => {
                         Give your server a personality with a name and an image. You can always change it later.
                     </DialogDescription>
                 </DialogHeader>
+                <Form {...form}>
+                    <form onSubmit={form.handleSubmit(onSubmit)} className='space-y-8'>
+                        <div className='space-y-8 px-6'>
+                            <div className='flex items-center justify-center text-center'>
+                                TODO: Image Upload
+                            </div>
+
+                            <FormField 
+                                control={form.control}
+                                name='name'
+                                render={ ({ field }) => (
+                                    <FormItem>
+                                        <FormLabel
+                                            className='uppercase text-xs font-bold text-sinc-500 dark:text-secondary/70'
+                                        >
+                                            Server Name
+                                        </FormLabel>
+                                    </FormItem>
+                                )
+
+                                }
+                            />
+                        </div>
+                    </form>
+                </Form>
             </DialogContent>
         </Dialog>
         
