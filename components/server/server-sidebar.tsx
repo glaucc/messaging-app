@@ -55,7 +55,7 @@ export const ServerSidebar = async ({
             <ServerHeader 
                 server={server}
                 role={role}
-            />          
+            />
         </div>
     )
 }
