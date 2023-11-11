@@ -8,7 +8,7 @@ import { cn } from '@/lib/utils'
 import { ModalProvider } from '@/components/providers/modal-provider'
 
 
-const font = Open_Sans({ subsets: ['latin'] })
+const font = Open_Sans({ subsets: ['latin'], display: 'swap', adjustFontFallback: false })
 
 export const metadata: Metadata = {
   title: 'Create Next App',
