@@ -11,6 +11,7 @@ CLERK_SECRET_KEY=
 DATABASE_URL=
 ```
 
+2. Installation & Running:
 ```bash
 npm i
 
